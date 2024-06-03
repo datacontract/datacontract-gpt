@@ -1,0 +1,117 @@
+dataContractSpecification: "0.9.3"
+id: "shipment-data-contract"
+info:
+  title: "Shipment Data Contract"
+  version: "1.0.0"
+  status: "active"
+  description: "Data contract for shipment information."
+  owner: "Logistics Team"
+  contact:
+    name: "Logistics Support"
+    email: "logistics-support@example.com"
+servers:
+  S3:
+    type: "s3"
+    location: "s3://logistics-data/shipments"
+    format: "json"
+models:
+  shipments:
+    description: "Details of each shipment."
+    type: "table"
+    fields:
+      shipment_id:
+        type: "string"
+        description: "Unique identifier for the shipment."
+        primary: true
+        required: true
+      sender:
+        type: "string"
+        description: "Name of the sender."
+        required: true
+      recipient:
+        type: "string"
+        description: "Name of the recipient."
+        required: true
+      origin:
+        type: "string"
+        description: "Origin location of the shipment."
+        required: true
+      destination:
+        type: "string"
+        description: "Destination location of the shipment."
+        required: true
+      weight:
+        type: "decimal"
+        description: "Weight of the shipment in kilograms."
+        precision: 10
+        scale: 2
+        required: true
+      shipped_date:
+        type: "timestamp"
+        description: "Date and time when the shipment was sent."
+        required: true
+      delivery_date:
+        type: "timestamp"
+        description: "Date and time when the shipment was delivered."
+      status:
+        type: "string"
+        description: "Current status of the shipment."
+        enum: ["pending", "shipped", "in_transit", "delivered", "canceled"]
+        required: true
+examples:
+  - type: "json"
+    model: "shipments"
+    data:
+      - shipment_id: "SHIP12345"
+        sender: "Company A"
+        recipient: "Customer B"
+        origin: "New York, NY"
+        destination: "San Francisco, CA"
+        weight: 15.75
+        shipped_date: "2023-06-01T10:00:00Z"
+        delivery_date: "2023-06-03T15:30:00Z"
+        status: "delivered"
+  - type: "json"
+    model: "shipments"
+    data:
+      - shipment_id: "SHIP12346"
+        sender: "Company C"
+        recipient: "Customer D"
+        origin: "Los Angeles, CA"
+        destination: "Seattle, WA"
+        weight: 5.20
+        shipped_date: "2023-06-01T11:00:00Z"
+        status: "in_transit"
+quality:
+  type: "SodaCL"
+  specification: |
+    checks for shipments:
+      - schema:
+          fail:
+            when required column missing:
+              - shipment_id
+              - sender
+              - recipient
+              - origin
+              - destination
+              - weight
+              - shipped_date
+              - status
+      - values in shipment_id:
+          must not be null:
+            fail:
+              count: 1
+      - values in weight:
+          must not be null:
+            fail:
+              count: 1
+          must be between 0 and 1000:
+            fail:
+              count: 1
+      - values in status:
+          must be in:
+            - pending
+            - shipped
+            - in_transit
+            - delivered
+            - canceled

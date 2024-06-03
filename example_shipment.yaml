@@ -1,0 +1,6 @@
+shipment_id: "123e4567-e89b-12d3-a456-426614174000"
+origin: "New York, NY"
+destination: "Los Angeles, CA"
+shipment_date: "2024-01-01T10:00:00Z"
+delivery_date: "2024-01-05T15:00:00Z"
+status: "delivered"
