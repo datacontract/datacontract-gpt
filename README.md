@@ -103,7 +103,7 @@ examples:
 
 [Example](https://chatgpt.com/share/e/1b27cab6-6ea8-49ff-8c8e-d1765fb34dd9)
 
-Upload example data.
+Upload [example data](example_shipment.yaml).
 
 > Create a data contract for the uploaded example data.
 
@@ -233,7 +233,7 @@ quality:
 
 > Add new field location to this data contract.
 > 
-> PASTE DATA CONTRACT YAML HERE
+> PASTED example_datacontract.yaml
 
 ```yaml
 dataContractSpecification: "0.9.3"
