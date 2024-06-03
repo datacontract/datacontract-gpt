@@ -14,7 +14,7 @@
 
 > **Data Contract GPT**
 > 
-> YAML of a data contract
+> *YAML of a data contract*
 
 ## Create a data contract from example data
 
@@ -28,7 +28,7 @@
 
 > **Data Contract GPT**
 >
-> YAML of a data contract
+> *YAML of a data contract*
 
 ## Extend an existing data contract interactively
 
@@ -42,7 +42,7 @@
 
 > **Data Contract GPT**
 > 
-> YAML of the data contract with the location field
+> *YAML of the data contract with the location field*
 
 > **User**
 >
