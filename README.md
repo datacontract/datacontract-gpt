@@ -2,7 +2,7 @@
 
 [Data Contract GPT](https://chatgpt.com/g/g-QGMQrqm3p-data-contract-gpt) for the [Data Contract Specification](https://datacontract.com)
 
-[![](/images/datacontract-preview.png){: width="60%"}](https://chatgpt.com/g/g-QGMQrqm3p-data-contract-gpt)
+[![](/images/browser.png){: width="60%"}](https://chatgpt.com/g/g-QGMQrqm3p-data-contract-gpt)
 
 ## Create an initial data contract for your domain
 
