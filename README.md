@@ -4,7 +4,7 @@
   <a href="https://datacontract.com/slack" rel="nofollow"><img src="https://camo.githubusercontent.com/5ade1fd1e76a6ab860802cdd2941fe2501e2ca2cb534e5d8968dbf864c13d33d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736c61636b2d6a6f696e5f636861742d77686974652e7376673f6c6f676f3d736c61636b267374796c653d736f6369616c" alt="Slack Status" data-canonical-src="https://img.shields.io/badge/slack-join_chat-white.svg?logo=slack&amp;style=social" style="max-width: 100%;"></a>
 </p>
 
-[Data Contract GPT](https://chatgpt.com/g/g-QGMQrqm3p-data-contract-gpt) for the [Data Contract Specification](https://datacontract.com) to create data contracts from your example data, chat with your data contracts, or export in other formats.
+[Data Contract GPT](https://chatgpt.com/g/g-QGMQrqm3p-data-contract-gpt) for the [Data Contract Specification](https://datacontract.com) to create data contracts from your example data, chat with your data contracts, or export in other formats. And yes, we know that GPTs can be wrong. That's why we also offer a [deterministic open source tool around data contracts written in Python](https://cli.datacontract.com).
 
 [![Data Contract GPT Browser Window](/images/datacontract-gpt-browser.png){: width="100%"}](https://chatgpt.com/g/g-QGMQrqm3p-data-contract-gpt)
 
