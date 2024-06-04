@@ -42,9 +42,9 @@
 
 > **User**
 > 
-> Add new field location to this data contract.
-> 
 > *Paste [example contract](example_datacontract.yaml) into prompt*
+> 
+> Add new field location to this data contract.
 
 > **Data Contract GPT**
 > 
