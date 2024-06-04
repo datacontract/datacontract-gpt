@@ -6,7 +6,7 @@
 
 ## Create an initial data contract for your domain
 
-[Open Example in Data Contract GPT (Requires free ChatGPT account)](https://chatgpt.com/share/e/515633e9-2bbd-472a-8244-29430f107cda)
+[Open Example in Data Contract GPT (Requires free ChatGPT account)](https://chatgpt.com/share/9695cd45-0352-4d9a-bae2-6ee1b236a1a0)
 
 > **User**
 > 
@@ -15,13 +15,20 @@
 > **Data Contract GPT**
 >
 > ```yaml
-> 
->  ...
+> dataContractSpecification: "0.9.3"
+> id: "logistics_shipments_001"
+> info:
+>   title: "Logistics Shipments"
+>   version: "1.0.0"
+>   status: "active"
+>   description: "Data contract for the shipments table in the logistics domain."
+>   owner: "Logistics Team"
+> ...
 > ```
 
 ## Create a data contract from example data
 
-[Open Example in Data Contract GPT (Requires free ChatGPT account)](https://chatgpt.com/share/e/1b27cab6-6ea8-49ff-8c8e-d1765fb34dd9)
+[Open Example in Data Contract GPT (Requires free ChatGPT account)](https://chatgpt.com/share/82614125-2152-4603-b52d-03619e59699e)
 
 > **User**
 > 
@@ -32,13 +39,22 @@
 > **Data Contract GPT**
 >
 > ```yaml
-> 
->  ...
+> dataContractSpecification: "0.9.3"
+> id: "shipment-data-contract"
+> info:
+>   title: "Shipment Data Contract"
+>   version: "1.0.0"
+>   status: "active"
+>   description: |
+>     This data contract defines the structure and requirements for shipment data, including details 
+>     about the shipment ID, order ID, shipping address, shipment date, and delivery date.
+>   owner: "Logistics Team"
+> ...
 > ```
 
 ## Extend an existing data contract interactively
 
-[Open Example in Data Contract GPT (Requires free ChatGPT account)](https://chatgpt.com/share/e/6079bdf8-3b9b-477a-ba4f-93a0dee4e6dc)
+[Open Example in Data Contract GPT (Requires free ChatGPT account)](https://chatgpt.com/share/fc3486e4-c289-4314-8e29-e1ea26b744dd)
 
 > **User**
 > 
@@ -49,8 +65,22 @@
 > **Data Contract GPT**
 > 
 > ```yaml
-> 
->  ...
+> ...
+> models:
+>   shipments:
+>     fields:
+>       location:
+>         type: "string"
+>         description: "Current location of the shipment."
+> ...
+> examples:
+>   - type: "json"
+>     model: "shipments"
+>     data:
+>     - shipment_id: "SHIP12345"
+>       ...
+>       location: "San Francisco, CA"
+> ...
 > ```
 
 > **User**
