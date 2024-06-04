@@ -13,9 +13,10 @@
 > Create a data contract for data in the logistics domain for my table shipments in Snowflake.
 
 > **Data Contract GPT**
-> 
+>
 > ```yaml
 > 
+>  ...
 > ```
 
 ## Create a data contract from example data
@@ -30,7 +31,10 @@
 
 > **Data Contract GPT**
 >
-> *YAML of a data contract*
+> ```yaml
+> 
+>  ...
+> ```
 
 ## Extend an existing data contract interactively
 
@@ -46,6 +50,7 @@
 > 
 > ```yaml
 > 
+>  ...
 > ```
 
 > **User**
@@ -71,5 +76,5 @@
 >      description: "The data for shipments is updated daily to ensure accuracy."
 >      threshold: "P1D"
 >      timestampField: "shipped_date"
->  ... abbreviated ...
+>  ...
 >  ```
