@@ -72,9 +72,9 @@
 >      threshold: "PT24H"
 >      sourceTimestampField: "shipped_date"
 >      processedTimestampField: "delivery_date"
->    freshness:
->      description: "The data for shipments is updated daily to ensure accuracy."
->      threshold: "P1D"
->      timestampField: "shipped_date"
 >  ...
 >  ```
+
+## You have even better prompt ideas?
+
+Help others and contribute your great prompt ideas to this repository.
