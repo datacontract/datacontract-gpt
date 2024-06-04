@@ -6,7 +6,7 @@
 
 ## Create an initial data contract for your domain
 
-[Open Example in Data Contract GPT](https://chatgpt.com/share/e/515633e9-2bbd-472a-8244-29430f107cda)
+[Open Example in Data Contract GPT (Requires free ChatGPT account)](https://chatgpt.com/share/e/515633e9-2bbd-472a-8244-29430f107cda)
 
 > **User**
 > 
@@ -14,11 +14,13 @@
 
 > **Data Contract GPT**
 > 
-> *YAML of a data contract*
+> ```yaml
+> 
+> ```
 
 ## Create a data contract from example data
 
-[Open Example in Data Contract GPT](https://chatgpt.com/share/e/1b27cab6-6ea8-49ff-8c8e-d1765fb34dd9)
+[Open Example in Data Contract GPT (Requires free ChatGPT account)](https://chatgpt.com/share/e/1b27cab6-6ea8-49ff-8c8e-d1765fb34dd9)
 
 > **User**
 > 
@@ -32,17 +34,19 @@
 
 ## Extend an existing data contract interactively
 
-[Open Example in Data Contract GPT](https://chatgpt.com/share/e/6079bdf8-3b9b-477a-ba4f-93a0dee4e6dc)
+[Open Example in Data Contract GPT (Requires free ChatGPT account)](https://chatgpt.com/share/e/6079bdf8-3b9b-477a-ba4f-93a0dee4e6dc)
 
 > **User**
 > 
 > Add new field location to this data contract.
 > 
-> *Paste contents of example_datacontract.yaml into prompt*
+> *Paste [example contract](example_datacontract.yaml) into prompt*
 
 > **Data Contract GPT**
 > 
-> *YAML of the data contract with the location field*
+> ```yaml
+> 
+> ```
 
 > **User**
 >
@@ -67,19 +71,5 @@
 >      description: "The data for shipments is updated daily to ensure accuracy."
 >      threshold: "P1D"
 >      timestampField: "shipped_date"
->    frequency:
->      description: "Data is updated in batches once a day."
->      type: "batch"
->      interval: "daily"
->      cron: "0 0 * * *"
->    support:
->      description: "Support is available during business hours."
->      time: "9am to 5pm in EST on business days"
->      responseTime: "24 hours"
->    backup:
->      description: "Data is backed up weekly, every Sunday at 0:00 UTC."
->      interval: "weekly"
->      cron: "0 0 * * 0"
->      recoveryTime: "24 hours"
->      recoveryPoint: "1 week"
+>  ... abbreviated ...
 >  ```
